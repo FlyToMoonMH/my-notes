@@ -1,0 +1,82 @@
+site_name: 我的笔记站
+site_url: https://FlyToMoonMH.github.io/my-notes/
+site_description: 一个用 Markdown 写作并自动发布的个人笔记站
+site_author: FlyToMoonMH
+
+repo_name: FlyToMoonMH/my-notes
+repo_url: https://github.com/FlyToMoonMH/my-notes
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  icon:
+    logo: material/notebook-outline
+  font: false
+  palette:
+    - scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - toc.follow
+    - content.code.copy
+    - search.highlight
+
+nav:
+  - 首页:
+      - index.md
+      - 最近更新: changelog.md
+      - 朋友链接: links.md
+  - 搭站指南:
+      - setup/index.md
+      - 第一步：改成你自己的站: setup/first-steps.md
+      - 发布到 GitHub Pages: setup/github-pages.md
+  - 示例笔记:
+      - notes/index.md
+      - Markdown 示例: notes/markdown-demo.md
+      - 归档页示例: archive.md
+  - 关于:
+      - about.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - sane_lists
+  - tables
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+extra_css:
+  - assets/stylesheets/custom.css
+
+extra_javascript:
+  - assets/javascripts/site-widgets.js

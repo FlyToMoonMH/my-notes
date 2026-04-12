@@ -1,0 +1,18 @@
+{
+  "stats": [
+    { "label": "站点状态", "value": "可直接改" },
+    { "label": "部署方式", "value": "GitHub Pages" },
+    { "label": "维护方式", "value": "Markdown" },
+    { "label": "适合人群", "value": "新手" }
+  ],
+  "updates": [
+    { "title": "先把站点名称改成你自己的", "url": "setup/first-steps/", "date": "建议先看" },
+    { "title": "第一次发布到 GitHub Pages", "url": "setup/github-pages/", "date": "发布指南" },
+    { "title": "看看 Markdown 是怎么写的", "url": "notes/markdown-demo/", "date": "练手页面" }
+  ],
+  "friends": [
+    { "name": "GitHub", "url": "https://github.com", "desc": "托管你的仓库" },
+    { "name": "MkDocs", "url": "https://www.mkdocs.org/", "desc": "文档站生成器" },
+    { "name": "Material", "url": "https://squidfunk.github.io/mkdocs-material/", "desc": "站点主题" }
+  ]
+}
