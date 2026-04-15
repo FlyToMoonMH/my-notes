@@ -1,0 +1,326 @@
+@import url("https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css");
+@import url("https://cdn.tonycrane.cc/lxgw/lxgwscreen.css");
+
+@light-bg: #fbfbfa;
+@light-surface: #fefefe;
+@light-fg: #101010;
+@light-fg-strong: #000000;
+@light-muted: #575757;
+@light-line: rgba(0, 0, 0, 0.14);
+@light-line-strong: rgba(0, 0, 0, 0.2);
+@light-link: #555555;
+@light-link-hover: #1e1e1e;
+@light-code: #fafafa;
+@light-inline-code: #f0f0f0;
+@light-quote: #f3f3f3;
+
+@dark-bg: #161616;
+@dark-surface: #181818;
+@dark-fg: rgba(255, 255, 255, 0.9);
+@dark-fg-strong: #ffffff;
+@dark-muted: rgba(255, 255, 255, 0.68);
+@dark-line: rgba(255, 255, 255, 0.16);
+@dark-line-strong: rgba(255, 255, 255, 0.24);
+@dark-link: #d3d3d3;
+@dark-link-hover: #ffffff;
+@dark-code: #1d1d1d;
+@dark-inline-code: #232323;
+@dark-quote: #1d1d1d;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: @light-bg !important;
+  color: @light-fg !important;
+  font-family: "JetBrains Mono", "LXGW WenKai Screen", monospace !important;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+body[data-preview-theme="dark"] {
+  background: @dark-bg !important;
+  color: @dark-fg !important;
+}
+
+.markdown-preview,
+.crossnote[data-for="preview"] {
+  box-sizing: border-box;
+  max-width: 914px;
+  margin: 0 auto;
+  padding: 2rem 2.4rem !important;
+}
+
+body[data-preview-theme="dark"] .markdown-preview,
+body[data-preview-theme="dark"] .crossnote[data-for="preview"] {
+  color: @dark-fg !important;
+}
+
+@media screen and (max-width: 914px) {
+  .markdown-preview,
+  .crossnote[data-for="preview"] {
+    padding: 1.4rem 1.35rem !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+  line-height: 1.2;
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+  color: @light-fg-strong;
+  letter-spacing: 0;
+}
+
+body[data-preview-theme="dark"] h1,
+body[data-preview-theme="dark"] h2,
+body[data-preview-theme="dark"] h3,
+body[data-preview-theme="dark"] h4,
+body[data-preview-theme="dark"] h5,
+body[data-preview-theme="dark"] h6 {
+  color: @dark-fg-strong;
+}
+
+html body h1,
+html body h2 {
+  font-weight: 600;
+}
+
+html body h3,
+html body h4 {
+  font-weight: 500;
+}
+
+html body h1 {
+  font-size: 2.15em;
+}
+
+html body h2 {
+  font-size: 1.72em;
+  padding-bottom: 0.28em;
+  border-bottom: 1px solid fade(@light-line, 90%);
+}
+
+body[data-preview-theme="dark"] h2 {
+  border-bottom-color: fade(@dark-line, 100%);
+}
+
+html body h3 {
+  font-size: 1.42em;
+}
+
+html body h4 {
+  font-size: 1.16em;
+}
+
+html body p,
+html body blockquote,
+html body dl,
+html body ol,
+html body pre,
+html body table,
+html body ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+html body a {
+  color: @light-link;
+  text-decoration: none;
+}
+
+html body a:hover {
+  color: @light-link-hover;
+}
+
+body[data-preview-theme="dark"] a {
+  color: @dark-link;
+}
+
+body[data-preview-theme="dark"] a:hover {
+  color: @dark-link-hover;
+}
+
+html body ul {
+  list-style: disc;
+}
+
+html body ul ul {
+  list-style: circle;
+}
+
+html body ul ul ul {
+  list-style: square;
+}
+
+html body ol {
+  list-style: decimal;
+}
+
+html body ol,
+html body ul {
+  padding-left: 2em;
+}
+
+html body li.task-list-item {
+  list-style: none !important;
+}
+
+html body .task-list-item-checkbox {
+  margin: 0 0.35em 0.25em -1.8em;
+  vertical-align: middle;
+}
+
+html body blockquote {
+  padding: 0.85rem 1rem;
+  border-left: 3px solid @light-line-strong;
+  border-radius: 0 6px 6px 0;
+  background: @light-quote;
+  color: @light-muted;
+}
+
+body[data-preview-theme="dark"] blockquote {
+  border-left-color: @dark-line-strong;
+  background: @dark-quote;
+  color: @dark-muted;
+}
+
+html body hr {
+  height: 0;
+  margin: 2rem 0;
+  border: 0;
+  border-top: 1px solid fade(@light-line, 90%);
+}
+
+body[data-preview-theme="dark"] hr {
+  border-top-color: fade(@dark-line, 100%);
+}
+
+html body table {
+  width: 100%;
+  display: block;
+  overflow: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid @light-line;
+  border-radius: 6px;
+  background: @light-surface;
+}
+
+body[data-preview-theme="dark"] table {
+  border-color: @dark-line;
+  background: @dark-surface;
+}
+
+html body table th {
+  font-weight: 700;
+  color: @light-fg-strong;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+body[data-preview-theme="dark"] table th {
+  color: @dark-fg-strong;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+html body table td,
+html body table th {
+  border: 1px solid @light-line;
+  padding: 6px 13px;
+}
+
+body[data-preview-theme="dark"] table td,
+body[data-preview-theme="dark"] table th {
+  border-color: @dark-line;
+}
+
+html body code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.92em;
+  color: @light-fg-strong;
+  background: @light-inline-code;
+  border-radius: 4px;
+  padding: 0.08em 0.32em;
+}
+
+body[data-preview-theme="dark"] code {
+  color: @dark-fg-strong;
+  background: @dark-inline-code;
+}
+
+html body pre,
+html body .highlight pre {
+  padding: 1em 1.1em;
+  overflow: auto;
+  line-height: 1.55;
+  border: 1px solid @light-line;
+  border-radius: 6px;
+  background: @light-code;
+}
+
+body[data-preview-theme="dark"] pre,
+body[data-preview-theme="dark"] .highlight pre {
+  border-color: @dark-line;
+  background: @dark-code;
+}
+
+html body pre code,
+html body pre tt {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background: transparent;
+  border: 0;
+}
+
+html body img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+html body kbd {
+  color: @light-fg-strong;
+  border: 1px solid @light-line;
+  border-bottom: 2px solid fade(@light-line-strong, 90%);
+  padding: 2px 4px;
+  background: @light-inline-code;
+  border-radius: 4px;
+}
+
+body[data-preview-theme="dark"] kbd {
+  color: @dark-fg-strong;
+  border-color: @dark-line;
+  border-bottom-color: @dark-line-strong;
+  background: @dark-inline-code;
+}
+
+.markdown-preview .md-toc,
+.crossnote[data-for="preview"] .md-toc {
+  padding: 0;
+}
+
+.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link,
+.crossnote[data-for="preview"] .md-toc .md-toc-link-wrapper .md-toc-link {
+  display: inline;
+  padding: 0.25rem 0;
+}
+
+.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link,
+.crossnote[data-for="preview"] .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+  font-weight: 800;
+}

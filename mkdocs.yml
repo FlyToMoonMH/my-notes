@@ -15,13 +15,13 @@ theme:
   font: false
   palette:
     - scheme: default
-      primary: white
+      primary: indigo
       accent: indigo
       toggle:
         icon: material/weather-night
         name: 切换到深色模式
     - scheme: slate
-      primary: black
+      primary: indigo
       accent: indigo
       toggle:
         icon: material/weather-sunny
