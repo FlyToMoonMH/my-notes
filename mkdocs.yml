@@ -49,7 +49,6 @@ nav:
       - notes/index.md
       - Markdown 示例: notes/markdown-demo.md
       - 归档页示例: archive.md
-      - 数字中端基础知识示例: notes/数字中端基础知识.md
       - 认识相机: notes/认识相机.md
   - 关于:
       - about.md
@@ -76,8 +75,11 @@ markdown_extensions:
 
 plugins:
   - search
+  - heti:
+      disable_serve: false
 
 extra_css:
+  - assets/stylesheets/heti.css
   - assets/stylesheets/custom.css
 
 extra_javascript:
