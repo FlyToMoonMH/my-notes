@@ -45,16 +45,21 @@ nav:
       - index.md
       - 更新记录: changelog.md
       - 朋友链接: links.md
-  - Setup:
+      - 全部笔记: notes/index.md
+  - Guides:
       - setup/index.md
       - 第一步：改成你自己的站: setup/first-steps.md
       - 发布到 GitHub Pages: setup/github-pages.md
-  - Notes:
-      - notes/index.md
+  - Tools:
+      - tools/index.md
+      - Shell 备忘: notes/Shell.md
       - Markdown 示例: notes/markdown-demo.md
       - 归档页示例: archive.md
-      - Shell 备忘: notes/Shell.md
+  - Camera:
+      - camera/index.md
       - 认识相机: notes/认识相机.md
+  - Writing:
+      - writing/index.md
       - 毕业论文: notes/毕业论文.md
       - 答辩逐字稿: notes/毕业论文-答辩逐字稿.md
   - About:

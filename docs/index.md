@@ -12,7 +12,13 @@ statistics: true
 
 这里是 FlyToMoonMH 的个人笔记本哦！
 
+我把这里整理成了几个长期入口：搭站、Tools、Camera 和 Writing。
+
 [:material-clock-time-two-outline: 最近更新](changelog.md) /
+[:material-rocket-launch-outline: Guides](setup/) /
+[:material-console-line: Tools](tools/) /
+[:material-camera-outline: Camera](camera/) /
+[:material-notebook-edit-outline: Writing](writing/)  
 [:octicons-link-16: 朋友们!](links.md) /
 [:material-chart-line: 站点统计](javascript:toggle_statistics();)
 

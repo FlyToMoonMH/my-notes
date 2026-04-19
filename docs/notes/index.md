@@ -1,13 +1,19 @@
-# 示例笔记
+# All Notes
 
-这个分区只是演示“文档型站点”的结构。
+这里是一页总览，把目前站里的主要内容放在同一处方便浏览。
 
-你以后可以把这里改成：
+<div class="grid cards" markdown="1">
 
-- 前端
-- 后端
-- Python
-- 读书笔记
-- 工作记录
+- [:material-rocket-launch-outline: Guides](../setup/)
+  搭站、改站和发布相关内容。
 
-每个主题下面再放具体文章。
+- [:material-console-line: Tools](../tools/)
+  Shell、Markdown 和工具型笔记。
+
+- [:material-camera-outline: Camera](../camera/)
+  摄影基础、器材理解和入门常识。
+
+- [:material-notebook-edit-outline: Writing](../writing/)
+  论文、答辩和偏长文本材料。
+
+</div>

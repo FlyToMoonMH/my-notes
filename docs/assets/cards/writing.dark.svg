@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 921" fill="none">
+  <rect width="660" height="921" rx="42" fill="#15111B"/>
+  <circle cx="520" cy="140" r="144" fill="#FF857A" fill-opacity=".18"/>
+  <circle cx="120" cy="770" r="180" fill="#7E62FF" fill-opacity=".18"/>
+  <text x="66" y="118" fill="#F8F2FF" font-family="JetBrains Mono, monospace" font-size="26" letter-spacing="4">WRITING</text>
+  <text x="66" y="162" fill="#A296B0" font-family="JetBrains Mono, monospace" font-size="18">thesis / draft / defense</text>
+  <rect x="82" y="216" width="496" height="612" rx="34" fill="#1E1827" stroke="#34293F" stroke-width="6"/>
+  <rect x="116" y="262" width="198" height="30" rx="15" fill="#F0E9F8"/>
+  <rect x="116" y="320" width="382" height="16" rx="8" fill="#61556B"/>
+  <rect x="116" y="352" width="354" height="16" rx="8" fill="#61556B"/>
+  <rect x="116" y="384" width="310" height="16" rx="8" fill="#61556B"/>
+  <rect x="116" y="442" width="428" height="142" rx="26" fill="#251E2D"/>
+  <path d="M144 540L216 488L276 522L332 470L402 512L470 456L516 498" stroke="#FF8D86" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="216" cy="488" r="12" fill="#FF8D86"/>
+  <circle cx="332" cy="470" r="12" fill="#FF8D86"/>
+  <circle cx="470" cy="456" r="12" fill="#FF8D86"/>
+  <rect x="116" y="626" width="184" height="110" rx="22" fill="#F0E9F8"/>
+  <text x="144" y="676" fill="#2B2236" font-family="JetBrains Mono, monospace" font-size="22">chapter 01</text>
+  <text x="144" y="714" fill="#6C5E7D" font-family="JetBrains Mono, monospace" font-size="18">context + method</text>
+  <rect x="330" y="626" width="214" height="110" rx="22" fill="#FFBE8E"/>
+  <text x="358" y="676" fill="#5A3111" font-family="JetBrains Mono, monospace" font-size="22">defense flow</text>
+  <text x="358" y="714" fill="#8B5A34" font-family="JetBrains Mono, monospace" font-size="18">talk / pace / timing</text>
+</svg>

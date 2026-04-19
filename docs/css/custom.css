@@ -77,6 +77,15 @@ textarea {
   font-size: inherit;
 }
 
+.md-tabs__link {
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+}
+
+.md-tabs__list {
+  gap: 0.35rem;
+}
+
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: #efefef;
   --md-primary-bg-color: #000000;

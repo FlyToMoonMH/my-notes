@@ -5,28 +5,34 @@ const siteRoot =
 
 const cards = [
   {
-    label: "进入笔记",
-    url: "notes/",
-    darkImage: "assets/cards/system.png",
-    lightImage: "assets/cards/system.light.png",
+    label: "打开 Guides",
+    url: "setup/",
+    darkImage: "assets/cards/guides.dark.svg",
+    lightImage: "assets/cards/guides.light.svg",
   },
   {
-    label: "查看备忘",
-    url: "notes/Shell/",
-    darkImage: "assets/cards/tools.png",
-    lightImage: "assets/cards/tools.light.png",
+    label: "打开 Tools",
+    url: "tools/",
+    darkImage: "assets/cards/tools.dark.svg",
+    lightImage: "assets/cards/tools.light.svg",
   },
   {
-    label: "最近更新",
+    label: "打开 Camera",
+    url: "camera/",
+    darkImage: "assets/cards/camera.dark.svg",
+    lightImage: "assets/cards/camera.light.svg",
+  },
+  {
+    label: "打开 Writing",
+    url: "writing/",
+    darkImage: "assets/cards/writing.dark.svg",
+    lightImage: "assets/cards/writing.light.svg",
+  },
+  {
+    label: "查看 Updates",
     url: "changelog/",
-    darkImage: "assets/cards/writeups.png",
-    lightImage: "assets/cards/writeups.light.png",
-  },
-  {
-    label: "朋友链接",
-    url: "links/",
-    darkImage: "assets/cards/regex.png",
-    lightImage: "assets/cards/regex.light.png",
+    darkImage: "assets/cards/updates.dark.svg",
+    lightImage: "assets/cards/updates.light.svg",
   },
 ];
 
@@ -59,7 +65,7 @@ function mountHomeCard() {
         </div>
       </a>
       <div class="showcase-card__controls">
-        <button class="showcase-card__next" type="button">换一张</button>
+        <button class="showcase-card__next" type="button">换个入口</button>
       </div>
     </div>
   `;

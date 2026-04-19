@@ -1,5 +1,8 @@
 - auto:
   - '2026-04-20':
+    - pageupdate:
+        text: o(〃'▽'〃)o Hi!
+        href: https://FlyToMoonMH.github.io/my-notes/
     - function:
         text: Update mkdocs.yml
         href: https://github.com/FlyToMoonMH/my-notes/commit/9f86e3f597c9f794bee5fccdbb4a50f4e07380a3

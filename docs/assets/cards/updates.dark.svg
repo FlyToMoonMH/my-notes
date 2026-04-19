@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 921" fill="none">
+  <rect width="660" height="921" rx="42" fill="#0F1717"/>
+  <circle cx="530" cy="144" r="138" fill="#45B97C" fill-opacity=".2"/>
+  <circle cx="114" cy="768" r="182" fill="#4D7DFF" fill-opacity=".16"/>
+  <text x="66" y="118" fill="#EEF8F8" font-family="JetBrains Mono, monospace" font-size="26" letter-spacing="4">UPDATES</text>
+  <text x="66" y="162" fill="#8A9B9D" font-family="JetBrains Mono, monospace" font-size="18">timeline / git / what's new</text>
+  <rect x="92" y="226" width="476" height="548" rx="34" fill="#152121" stroke="#223232" stroke-width="6"/>
+  <path d="M168 308V690" stroke="#45B97C" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="168" cy="356" r="18" fill="#45B97C"/>
+  <circle cx="168" cy="482" r="18" fill="#58B7FF"/>
+  <circle cx="168" cy="608" r="18" fill="#FFB45B"/>
+  <rect x="220" y="320" width="284" height="72" rx="22" fill="#1D3728"/>
+  <text x="248" y="366" fill="#91EDB4" font-family="JetBrains Mono, monospace" font-size="24">new section landing pages</text>
+  <rect x="220" y="446" width="244" height="72" rx="22" fill="#1A2D46"/>
+  <text x="248" y="492" fill="#98CCFF" font-family="JetBrains Mono, monospace" font-size="24">homepage cards refined</text>
+  <rect x="220" y="572" width="266" height="72" rx="22" fill="#43311F"/>
+  <text x="248" y="618" fill="#FFD19D" font-family="JetBrains Mono, monospace" font-size="24">theme system cleaned up</text>
+  <rect x="102" y="798" width="456" height="64" rx="22" fill="#EEF8F8"/>
+  <text x="132" y="840" fill="#172222" font-family="JetBrains Mono, monospace" font-size="24">track the project as it grows</text>
+</svg>

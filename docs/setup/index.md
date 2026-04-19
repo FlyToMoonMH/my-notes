@@ -1,21 +1,17 @@
-# 搭站指南
+# Guides
 
-如果你是第一次做网站，先记住一句话：
+这里放和这个站本身有关的内容：怎么改成你自己的站、怎么发布、怎么继续往下扩。
 
-你现在做的是“静态网站”，不是要自己开发一个复杂系统。
+如果你是第一次做文档站，先记住一句话：
 
-这意味着：
+你现在维护的是一个静态知识站，不是要从零开发一个复杂系统。
 
-- 内容主要是 Markdown 文件
-- GitHub 可以帮你自动发布
-- 你通常不需要服务器
+<div class="grid cards" markdown="1">
 
-## 你最先学什么
+- [:material-account-wrench-outline: 第一步：改成你自己的站](first-steps.md)
+  先把站点名、首页、关于页和基础资料换成你自己的版本。
 
-最值得先学的只有这三件事：
+- [:material-cloud-upload-outline: 发布到 GitHub Pages](github-pages.md)
+  让仓库自动构建和发布，这样每次推送都能更新线上站点。
 
-1. Markdown 怎么写
-2. GitHub Desktop 怎么提交和上传
-3. GitHub Pages 怎么自动发布
-
-剩下的 Linux、HTML、CSS，可以以后边做边学。
+</div>
