@@ -1,6 +1,9 @@
 - auto:
   - '2026-04-20':
     - newpage:
+        text: change docs
+        href: https://github.com/FlyToMoonMH/my-notes/commit/bb2a6ea45b778ce0b4249521dccf122f12f039cb
+    - newpage:
         text: change card3
         href: https://github.com/FlyToMoonMH/my-notes/commit/745e52dbc10cedf8689dcf8db50369ea3888810d
     - pageupdate:

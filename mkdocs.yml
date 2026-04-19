@@ -141,7 +141,7 @@ extra:
       mapping: pathname
 
 extra_css:
-  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - jbmono/jetbrainsmono.css
   - lxgw/lxgwscreen.css
   - css/tasklist.css
   - css/custom.css
