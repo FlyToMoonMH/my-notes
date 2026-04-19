@@ -1,5 +1,8 @@
 - auto:
   - '2026-04-19':
+    - function:
+        text: change font
+        href: https://github.com/FlyToMoonMH/my-notes/commit/2488d90ba60418789882d45db375a2d1a65f39b3
     - pageupdate:
         text: test-card
         href: https://github.com/FlyToMoonMH/my-notes/commit/7511c875ea48606f185add15baf3225987edb0db
