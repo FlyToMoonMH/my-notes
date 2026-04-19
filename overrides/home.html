@@ -55,16 +55,30 @@
     }
 
     .home-intro {
-      max-width: 38rem;
+      max-width: 33rem;
       margin-left: 0.8rem;
-      padding: 1rem 1.2rem;
-      border-radius: 0.35rem;
-      background: rgb(255 255 255 / 58%);
-      backdrop-filter: blur(6px);
     }
 
-    body[data-md-color-scheme="slate"] .home-intro {
-      background: rgb(0 0 0 / 36%);
+    .home-intro h1 {
+      margin-bottom: 1.8rem;
+      color: rgb(0 0 0 / 56%);
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    body[data-md-color-scheme="slate"] .home-intro h1 {
+      color: rgb(255 255 255 / 58%);
+    }
+
+    .home-intro p {
+      max-width: 28rem;
+      margin: 0 0 1.1rem;
+      line-height: 1.9;
+    }
+
+    .home-intro p:last-of-type {
+      margin-bottom: 1.35rem;
     }
 
     .home-card {
@@ -87,9 +101,6 @@
       .home-intro {
         max-width: none;
         margin-left: 0;
-        padding: 0;
-        background: transparent;
-        backdrop-filter: none;
       }
 
       .home-card {

@@ -1,4 +1,11 @@
 - auto:
+  - '2026-04-20':
+    - function:
+        text: Update mkdocs.yml
+        href: https://github.com/FlyToMoonMH/my-notes/commit/9f86e3f597c9f794bee5fccdbb4a50f4e07380a3
+    - function:
+        text: font change
+        href: https://github.com/FlyToMoonMH/my-notes/commit/7ef61f0e69ae828d4c019de3cc4c7b65d1891e9a
   - '2026-04-19':
     - function:
         text: change font

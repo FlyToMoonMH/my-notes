@@ -5,49 +5,25 @@ const siteRoot =
 
 const cards = [
   {
-    eyebrow: "FlyToMoonMH",
-    title: "笔记目录",
-    desc: "从这里进入我的文档型笔记分区。",
+    label: "进入笔记",
     url: "notes/",
     darkImage: "assets/cards/system.png",
     lightImage: "assets/cards/system.light.png",
   },
   {
-    eyebrow: "Notes / Shell",
-    title: "Shell 备忘",
-    desc: "一些关于终端和命令行的零散记录。",
+    label: "查看备忘",
     url: "notes/Shell/",
     darkImage: "assets/cards/tools.png",
     lightImage: "assets/cards/tools.light.png",
   },
   {
-    eyebrow: "Notes / Camera",
-    title: "认识相机",
-    desc: "用最直观的方式整理焦距、画幅和镜头基础。",
-    url: "notes/认识相机/",
-    darkImage: "assets/cards/unicode.png",
-    lightImage: "assets/cards/unicode.light.png",
-  },
-  {
-    eyebrow: "Theme / Setup",
-    title: "搭站指南",
-    desc: "把这套文档站继续改成你自己的工作台。",
-    url: "setup/first-steps/",
-    darkImage: "assets/cards/riscv.png",
-    lightImage: "assets/cards/riscv.light.png",
-  },
-  {
-    eyebrow: "Git / Changelog",
-    title: "最近更新",
-    desc: "自动根据 Git 提交生成的更新记录时间轴。",
+    label: "最近更新",
     url: "changelog/",
     darkImage: "assets/cards/writeups.png",
     lightImage: "assets/cards/writeups.light.png",
   },
   {
-    eyebrow: "Links / Friends",
-    title: "朋友链接",
-    desc: "一些我常用、也常看的工具与站点。",
+    label: "朋友链接",
     url: "links/",
     darkImage: "assets/cards/regex.png",
     lightImage: "assets/cards/regex.light.png",
@@ -80,11 +56,6 @@ function mountHomeCard() {
           <img class="showcase-card__image showcase-card__image--dark" alt="" />
           <div class="showcase-card__shine"></div>
           <div class="showcase-card__glare"></div>
-          <div class="showcase-card__overlay">
-            <span class="showcase-card__eyebrow"></span>
-            <span class="showcase-card__title"></span>
-            <span class="showcase-card__desc"></span>
-          </div>
         </div>
       </a>
       <div class="showcase-card__controls">
@@ -98,9 +69,6 @@ function mountHomeCard() {
   const glare = app.querySelector(".showcase-card__glare");
   const lightImage = app.querySelector(".showcase-card__image--light");
   const darkImage = app.querySelector(".showcase-card__image--dark");
-  const eyebrow = app.querySelector(".showcase-card__eyebrow");
-  const title = app.querySelector(".showcase-card__title");
-  const desc = app.querySelector(".showcase-card__desc");
   const nextButton = app.querySelector(".showcase-card__next");
 
   let currentIndex = randomIndex();
@@ -109,11 +77,10 @@ function mountHomeCard() {
     const card = cards[index];
     currentIndex = index;
     link.href = resolveUrl(card.url);
+    link.setAttribute("aria-label", card.label);
+    link.title = card.label;
     lightImage.src = resolveUrl(card.lightImage);
     darkImage.src = resolveUrl(card.darkImage);
-    eyebrow.textContent = card.eyebrow;
-    title.textContent = card.title;
-    desc.textContent = card.desc;
   }
 
   function resetTilt() {

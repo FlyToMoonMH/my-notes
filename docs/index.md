@@ -10,14 +10,10 @@ statistics: true
 
 # o(〃'▽'〃)o Hi!
 
-这里是 FlyToMoonMH 的个人笔记本。
-
-这个站点主要用来整理课程学习、技术踩坑、工具记录和一些长期可复用的文档。
+这里是 FlyToMoonMH 的个人笔记本哦！
 
 [:material-clock-time-two-outline: 最近更新](changelog.md) /
-[:octicons-link-16: 朋友链接](links.md) /
-[:material-book-open-page-variant-outline: 笔记目录](notes/index.md) /
-[:material-account-outline: 关于](about.md) /
+[:octicons-link-16: 朋友们!](links.md) /
 [:material-chart-line: 站点统计](javascript:toggle_statistics();)
 
 <div id="statistics" class="card home-card" markdown="1" style="opacity: 0;">
