@@ -1,6 +1,34 @@
 :root {
-  --md-text-font: "JetBrains Mono", "LXGW WenKai Screen"; 
-  --md-code-font: "JetBrains Mono";
+  --md-text-font: "LXGW WenKai Screen", "LXGW WenKai", "PingFang SC", "Hiragino Sans GB", "Noto Serif SC", serif;
+  --md-code-font: "JetBrains Mono", "LXGW WenKai Screen", monospace;
+}
+
+body,
+button,
+input,
+label,
+select,
+textarea {
+  font-family: var(--md-text-font-family);
+}
+
+.md-content,
+.md-header,
+.md-nav,
+.md-search,
+.md-search__form,
+.md-search__input,
+.md-source,
+.md-tabs,
+.md-typeset,
+.md-typeset :is(h1, h2, h3, h4, h5, h6, li, p, blockquote, table, summary) {
+  font-family: var(--md-text-font-family);
+}
+
+.md-typeset :is(code, pre, kbd),
+.highlighttable,
+.highlighttable * {
+  font-family: var(--md-code-font-family);
 }
 
 

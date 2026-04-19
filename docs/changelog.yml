@@ -1,6 +1,9 @@
 - auto:
   - '2026-04-19':
     - pageupdate:
+        text: test-card
+        href: https://github.com/FlyToMoonMH/my-notes/commit/7511c875ea48606f185add15baf3225987edb0db
+    - pageupdate:
         text: change website structure
         href: https://github.com/FlyToMoonMH/my-notes/commit/1f0c0d614108c0c3499a00894cce2d67c424d775
     - refactor:
