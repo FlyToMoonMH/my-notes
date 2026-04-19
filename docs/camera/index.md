@@ -6,7 +6,7 @@
 
 <div class="grid cards" markdown="1">
 
-- [:material-camera-outline: 认识相机](../notes/认识相机.md)
+- [:material-camera-outline: 认识相机](认识相机.md)
   用更直观的方式理解焦距、视角、CMOS 和画幅之间的关系。
 
 </div>

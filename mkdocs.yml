@@ -52,16 +52,16 @@ nav:
       - 发布到 GitHub Pages: setup/github-pages.md
   - Tools:
       - tools/index.md
-      - Shell 备忘: notes/Shell.md
-      - Markdown 示例: notes/markdown-demo.md
+      - Shell 备忘: tools/Shell.md
+      - Markdown 示例: tools/markdown-demo.md
       - 归档页示例: archive.md
   - Camera:
       - camera/index.md
-      - 认识相机: notes/认识相机.md
+      - 认识相机: camera/认识相机.md
   - Writing:
       - writing/index.md
-      - 毕业论文: notes/毕业论文.md
-      - 答辩逐字稿: notes/毕业论文-答辩逐字稿.md
+      - 毕业论文: writing/毕业论文.md
+      - 答辩逐字稿: writing/毕业论文-答辩逐字稿.md
   - About:
       - about.md
 

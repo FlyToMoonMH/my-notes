@@ -1,5 +1,8 @@
 - auto:
   - '2026-04-20':
+    - newpage:
+        text: change card3
+        href: https://github.com/FlyToMoonMH/my-notes/commit/745e52dbc10cedf8689dcf8db50369ea3888810d
     - pageupdate:
         text: o(〃'▽'〃)o Hi!
         href: https://FlyToMoonMH.github.io/my-notes/
@@ -45,7 +48,7 @@
         href: https://github.com/FlyToMoonMH/my-notes/commit/b56b45a11f59cb5118408b4ebe22bb9abf1ff8b4
   - '2026-04-15':
     - newpage:
-        text: 什么是Terminal？
+        text: change css
         href: https://FlyToMoonMH.github.io/my-notes/notes/Shell/
   - '2026-04-13':
     - function:

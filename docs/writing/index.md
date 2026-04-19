@@ -6,10 +6,10 @@
 
 <div class="grid cards" markdown="1">
 
-- [:material-file-document-outline: 毕业论文](../notes/毕业论文.md)
+- [:material-file-document-outline: 毕业论文](毕业论文.md)
   论文相关内容和汇报材料的主稿。
 
-- [:material-presentation-play: 答辩逐字稿](../notes/毕业论文-答辩逐字稿.md)
+- [:material-presentation-play: 答辩逐字稿](毕业论文-答辩逐字稿.md)
   更贴近现场表达的汇报版本，方便排练和压缩时长。
 
 </div>

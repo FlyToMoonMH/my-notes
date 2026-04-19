@@ -4,10 +4,10 @@
 
 <div class="grid cards" markdown="1">
 
-- [:material-console-line: Shell 备忘](../notes/Shell.md)
+- [:material-console-line: Shell 备忘](Shell.md)
   从 Terminal 是什么开始，把常用命令和终端概念慢慢补齐。
 
-- [:material-language-markdown-outline: Markdown 示例](../notes/markdown-demo.md)
+- [:material-language-markdown-outline: Markdown 示例](markdown-demo.md)
   用来测试标题、表格、代码块、提示块和排版细节。
 
 - [:material-archive-outline: 归档页示例](../archive.md)

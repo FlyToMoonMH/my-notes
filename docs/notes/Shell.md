@@ -1,6 +1,11 @@
 ---
-comment: true
+title: Shell 备忘
+hide:
+  - toc
+  - navigation
 ---
 
-# 什么是Terminal？
-> 早期计算机没有桌面环境，唯一的交互方式是键盘，用于输入数据，运行程序，并获得输出的“终端”。
+<meta http-equiv="refresh" content="0; url=../tools/Shell/">
+<script>location.replace("../tools/Shell/")</script>
+
+[如果没有自动跳转，请点这里前往新的地址。](../tools/Shell/)
