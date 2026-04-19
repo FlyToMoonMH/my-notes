@@ -30,6 +30,16 @@ theme:
     - navigation.footer
     - navigation.indexes
 
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: ignore
+    absolute_links: ignore
+    unrecognized_links: ignore
+
 nav:
   - Home:
       - index.md
@@ -43,7 +53,10 @@ nav:
       - notes/index.md
       - Markdown 示例: notes/markdown-demo.md
       - 归档页示例: archive.md
+      - Shell 备忘: notes/Shell.md
       - 认识相机: notes/认识相机.md
+      - 毕业论文: notes/毕业论文.md
+      - 答辩逐字稿: notes/毕业论文-答辩逐字稿.md
   - About:
       - about.md
 
@@ -82,6 +95,22 @@ markdown_extensions:
 
 plugins:
   - search
+  - glightbox:
+      width: 80%
+  - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
+      enable_creation_date: true
+      enable_git_follow: true
+      exclude:
+        - index.md
+        - changelog.md
+        - links.md
+        - about.md
+  - changelog
+  - statistics:
+      page_check_metadata: comment
   - heti:
       disable_serve: false
 
@@ -89,6 +118,22 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/FlyToMoonMH
+  analytics:
+    provider: custom
+    property: !ENV [GOOGLE_ANALYTICS_ID, ""]
+  comments:
+    provider: utterances
+    repo: FlyToMoonMH/my-notes
+    issue_term: pathname
+    label: comments
+    light_theme: github-light
+    dark_theme: github-dark
+    giscus:
+      repo: FlyToMoonMH/my-notes
+      repo_id: R_kgDOSAh5iw
+      category: General
+      category_id: ""
+      mapping: pathname
 
 extra_css:
   - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
@@ -100,3 +145,6 @@ extra_css:
   - css/changelog_extra.css
   - css/toc_extra.css
   - css/svg_extra.css
+
+hooks:
+  - hooks/auto_changelog.py

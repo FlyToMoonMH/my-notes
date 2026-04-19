@@ -1,0 +1,41 @@
+- auto:
+  - '2026-04-19':
+    - pageupdate:
+        text: change website structure
+        href: https://github.com/FlyToMoonMH/my-notes/commit/1f0c0d614108c0c3499a00894cce2d67c424d775
+    - refactor:
+        text: change css
+        href: https://github.com/FlyToMoonMH/my-notes/commit/8c42ba7ca2c150b0633af2ad3ffe493482f70808
+    - refactor:
+        text: change css
+        href: https://github.com/FlyToMoonMH/my-notes/commit/ad8552a230750c75843e7a17dce512806455b9a2
+    - refactor:
+        text: change css
+        href: https://github.com/FlyToMoonMH/my-notes/commit/e63db8cc869432f80203deb76903fcd6c1c7d874
+    - refactor:
+        text: Update custom.css
+        href: https://github.com/FlyToMoonMH/my-notes/commit/68fc06ed73114c5132212748ebdb686ab151f0b2
+    - refactor:
+        text: Update custom.css
+        href: https://github.com/FlyToMoonMH/my-notes/commit/f4a9287d223c4b8963e6fc0bf2bf2828dd93ad48
+    - refactor:
+        text: 调整 css
+        href: https://github.com/FlyToMoonMH/my-notes/commit/bf53e2edcac67b7db8facd8563d81001382a30ab
+    - function:
+        text: 调整图片样式
+        href: https://github.com/FlyToMoonMH/my-notes/commit/82880e1ad5c63364c74412a324d4a6f11c1268b6
+    - function:
+        text: 增加了认识相机
+        href: https://github.com/FlyToMoonMH/my-notes/commit/b56b45a11f59cb5118408b4ebe22bb9abf1ff8b4
+  - '2026-04-15':
+    - newpage:
+        text: 什么是Terminal？
+        href: https://FlyToMoonMH.github.io/my-notes/notes/Shell/
+  - '2026-04-13':
+    - function:
+        text: Update mkdocs.yml
+        href: https://github.com/FlyToMoonMH/my-notes/commit/a720ab569825609fcb9d97b34792e8e44e4a4982
+  - '2026-04-12':
+    - newpage:
+        text: initial site
+        href: https://github.com/FlyToMoonMH/my-notes/commit/d20f5bb5a4b35c37093ed7020ac0b1703358f65f

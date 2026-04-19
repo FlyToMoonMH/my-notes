@@ -1,0 +1,84 @@
+{% set comments = config.extra.comments if config.extra and config.extra.comments else {} %}
+{% set provider = comments.provider | d("utterances", true) %}
+{% set giscus = comments.giscus if comments and comments.giscus else {} %}
+
+{% if page.meta and page.meta.comment %}
+  <section class="comment-thread">
+    <h2 class="comment-thread__title">评论</h2>
+    <div id="comment-thread" class="comment-thread__body"></div>
+    <script>
+      (function () {
+        const container = document.getElementById("comment-thread");
+        if (!container) return;
+
+        const currentTheme = () =>
+          document.body && document.body.getAttribute("data-md-color-scheme") === "slate"
+            ? "dark"
+            : "light";
+
+        window.syncCommentTheme = function (scheme) {
+          const mode = scheme === "slate" ? "dark" : "light";
+          const utterancesFrame = document.querySelector(".utterances-frame");
+          if (utterancesFrame) {
+            utterancesFrame.contentWindow.postMessage(
+              {
+                type: "set-theme",
+                theme: mode === "dark"
+                  ? "{{ comments.dark_theme | d('github-dark', true) }}"
+                  : "{{ comments.light_theme | d('github-light', true) }}"
+              },
+              "https://utteranc.es"
+            );
+          }
+
+          const giscusFrame = document.querySelector(".giscus-frame");
+          if (giscusFrame) {
+            giscusFrame.contentWindow.postMessage(
+              {
+                giscus: {
+                  setConfig: {
+                    theme: mode === "dark" ? "transparent_dark" : "light"
+                  }
+                }
+              },
+              "https://giscus.app"
+            );
+          }
+        };
+
+        {% if provider == "giscus" and giscus.repo_id and giscus.category_id %}
+          const giscusScript = document.createElement("script");
+          giscusScript.src = "https://giscus.app/client.js";
+          giscusScript.async = true;
+          giscusScript.crossOrigin = "anonymous";
+          giscusScript.setAttribute("data-repo", "{{ giscus.repo | d(comments.repo, true) }}");
+          giscusScript.setAttribute("data-repo-id", "{{ giscus.repo_id }}");
+          giscusScript.setAttribute("data-category", "{{ giscus.category | d('General', true) }}");
+          giscusScript.setAttribute("data-category-id", "{{ giscus.category_id }}");
+          giscusScript.setAttribute("data-mapping", "{{ giscus.mapping | d('pathname', true) }}");
+          giscusScript.setAttribute("data-reactions-enabled", "1");
+          giscusScript.setAttribute("data-emit-metadata", "0");
+          giscusScript.setAttribute("data-input-position", "bottom");
+          giscusScript.setAttribute("data-theme", currentTheme() === "dark" ? "transparent_dark" : "light");
+          giscusScript.setAttribute("data-lang", "zh-CN");
+          container.appendChild(giscusScript);
+        {% else %}
+          const utterancesScript = document.createElement("script");
+          utterancesScript.src = "https://utteranc.es/client.js";
+          utterancesScript.async = true;
+          utterancesScript.crossOrigin = "anonymous";
+          utterancesScript.setAttribute("repo", "{{ comments.repo }}");
+          utterancesScript.setAttribute("issue-term", "{{ comments.issue_term | d('pathname', true) }}");
+          utterancesScript.setAttribute("label", "{{ comments.label | d('comments', true) }}");
+          utterancesScript.setAttribute(
+            "theme",
+            currentTheme() === "dark"
+              ? "{{ comments.dark_theme | d('github-dark', true) }}"
+              : "{{ comments.light_theme | d('github-light', true) }}"
+          );
+          container.appendChild(utterancesScript);
+        {% endif %}
+      })();
+    </script>
+  </section>
+{% endif %}

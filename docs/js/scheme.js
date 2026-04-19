@@ -1,17 +1,15 @@
 (() => {
+  const syncCommentTheme = () => {
+    if (typeof window.syncCommentTheme === "function") {
+      window.syncCommentTheme(document.querySelector("body").getAttribute("data-md-color-scheme"));
+    }
+  };
 
   const preferToggle = e => {
     if (localStorage.getItem("data-md-prefers-color-scheme") === "true") {
       document.querySelector("body").setAttribute("data-md-color-scheme", (e.matches) ? "slate" : "default")
     }
-    var frame = document.querySelector(".giscus-frame")
-    if (frame) {
-      var theme = document.querySelector("body").getAttribute("data-md-color-scheme") === "slate" ? "transparent_dark" : "light"
-      frame.contentWindow.postMessage(
-        { giscus: { setConfig: { theme } } },
-        "https://giscus.app"
-      )
-    }
+    syncCommentTheme()
   }
 
   const setupTheme = body => {
@@ -90,13 +88,5 @@ window.toggleScheme = () => {
   localStorage.setItem("data-md-color-scheme", scheme)
   body.setAttribute("data-md-prefers-color-scheme", prefer)
   body.setAttribute("data-md-color-scheme", scheme)
-
-  var frame = document.querySelector(".giscus-frame")
-  if (frame) {
-    var theme = scheme === "slate" ? "transparent_dark" : "light"
-    frame.contentWindow.postMessage(
-      { giscus: { setConfig: { theme } } },
-      "https://giscus.app"
-    )
-  }
+  syncCommentTheme()
 }

@@ -246,6 +246,33 @@ input#mkdocs-content-password {
   vertical-align: sub;
 }
 
+.hr-before-source-file {
+  margin-top: 2rem;
+}
+
+.comment-thread {
+  margin-top: 2rem;
+}
+
+.comment-thread__title {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.comment-thread__body {
+  min-height: 12rem;
+}
+
+.utterances,
+.giscus {
+  max-width: none !important;
+}
+
+.utterances-frame {
+  width: 100%;
+}
+
 .toc-tag {
   background-color: #3f6ec6b0;
   border-radius: 3px;

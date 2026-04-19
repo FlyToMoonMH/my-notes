@@ -1,0 +1,26 @@
+{% if config.extra.analytics %}
+  {% set property = config.extra.analytics.property | d("", true) %}
+{% endif %}
+{% if property and property.startswith("G-") %}
+  <script>
+    function gtag(){dataLayer.push(arguments)}
+    window.dataLayer = window.dataLayer || [];
+    gtag("js", new Date());
+    gtag("config", "{{ property }}");
+    document.addEventListener("DOMContentLoaded", function () {
+      if (document.forms.search && document.forms.search.query) {
+        document.forms.search.query.addEventListener("blur", function () {
+          if (this.value) {
+            gtag("event", "search", { search_term: this.value });
+          }
+        });
+      }
+      if (typeof location$ !== "undefined") {
+        location$.subscribe(function (url) {
+          gtag("config", "{{ property }}", { page_path: url.pathname });
+        });
+      }
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ property }}"></script>
+{% endif %}

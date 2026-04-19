@@ -1,3 +1,7 @@
+---
+comment: true
+---
+
 # Markdown 示例
 
 这页是给你练手用的。
