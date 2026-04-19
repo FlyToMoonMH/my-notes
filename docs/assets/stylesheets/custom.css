@@ -260,6 +260,13 @@ select {
   padding: 1.05em 1.1em;
 }
 
+.md-typeset img:not(.twemoji) {
+  display: block;
+  width: min(100%, 25rem);
+  height: auto;
+  margin: 1rem auto;
+}
+
 .md-typeset table:not([class]) {
   border: 1px solid var(--site-line);
   border-radius: 0.35rem;
