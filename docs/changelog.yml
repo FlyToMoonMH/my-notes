@@ -1,5 +1,8 @@
 - auto:
   - '2026-04-20':
+    - function:
+        text: change file dire
+        href: https://github.com/FlyToMoonMH/my-notes/commit/e434f7004dc823cb3fbdb920d5fe0a661f7cf107
     - newpage:
         text: change docs
         href: https://github.com/FlyToMoonMH/my-notes/commit/bb2a6ea45b778ce0b4249521dccf122f12f039cb
@@ -8,7 +11,7 @@
         href: https://github.com/FlyToMoonMH/my-notes/commit/745e52dbc10cedf8689dcf8db50369ea3888810d
     - pageupdate:
         text: o(〃'▽'〃)o Hi!
-        href: https://FlyToMoonMH.github.io/my-notes/
+        href: http://127.0.0.1:8000/my-notes/
     - function:
         text: Update mkdocs.yml
         href: https://github.com/FlyToMoonMH/my-notes/commit/9f86e3f597c9f794bee5fccdbb4a50f4e07380a3
@@ -52,7 +55,7 @@
   - '2026-04-15':
     - newpage:
         text: change css
-        href: https://FlyToMoonMH.github.io/my-notes/notes/Shell/
+        href: http://127.0.0.1:8000/my-notes/notes/Shell/
   - '2026-04-13':
     - function:
         text: Update mkdocs.yml
