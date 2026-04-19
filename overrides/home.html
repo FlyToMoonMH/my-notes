@@ -1,36 +1,118 @@
 {% extends "main.html" %}
 
-{% block content %}
-  <section class="hero">
-    <div class="hero__inner">
-      <p class="hero__eyebrow">FlyToMoonMH / Personal Notes</p>
-      <h1 class="hero__title">技术笔记 / 博客 / 知识归档</h1>
-      <p class="hero__lead">
-        用 Markdown 持续整理课程、技术、工具和零散想法，让内容像文档一样长期可检索。
-      </p>
-      <div class="hero__actions">
-        <a class="hero__button" href="{{ 'setup/first-steps/' | url }}">先改成你自己的站</a>
-        <a class="hero__button hero__button--ghost" href="{{ 'notes/markdown-demo/' | url }}">看看 Markdown 示例</a>
+{% block extrahead %}
+  <style>
+    body {
+      background-image: url("{{ 'assets/images/home/light.jpg' | url }}");
+      background-position: center top;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    body[data-md-color-scheme="slate"] {
+      background-image: url("{{ 'assets/images/home/dark.jpg' | url }}");
+    }
+
+    .md-header,
+    .md-tabs,
+    .md-footer,
+    .md-footer-meta {
+      background-color: transparent;
+    }
+
+    @media screen and (min-width: 1220px) {
+      .sidebar_nav {
+        height: 0 !important;
+      }
+    }
+
+    .md-main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .md-main__inner {
+      flex: 1;
+      display: flex;
+      margin-top: 1.5rem;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .md-content {
+      flex-grow: initial;
+    }
+
+    .md-content__inner {
+      margin: 0 !important;
+    }
+
+    .md-header--shadow {
+      box-shadow: none !important;
+    }
+
+    .home-intro {
+      max-width: 38rem;
+      padding: 1rem 1.2rem;
+      border-radius: 0.35rem;
+      background: rgb(255 255 255 / 58%);
+      backdrop-filter: blur(6px);
+    }
+
+    body[data-md-color-scheme="slate"] .home-intro {
+      background: rgb(0 0 0 / 36%);
+    }
+
+    .home-card {
+      width: min(28rem, 100%);
+      border-color: transparent;
+      font-size: 75%;
+      background: rgb(255 255 255 / 72%);
+      backdrop-filter: blur(6px);
+    }
+
+    body[data-md-color-scheme="slate"] .home-card {
+      background: rgb(0 0 0 / 42%);
+    }
+
+    @media (max-width: 960px) {
+      body {
+        background-attachment: scroll;
+      }
+
+      .home-intro {
+        max-width: none;
+        padding: 0;
+        background: transparent;
+        backdrop-filter: none;
+      }
+
+      .home-card {
+        width: 100%;
+      }
+    }
+  </style>
+{% endblock %}
+
+{% block site_nav %}
+  <div style="flex-grow: 1;">
+    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap sidebar_nav">
+        <div class="md-sidebar__inner">
+          {% include "partials/nav.html" %}
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+{% endblock %}
 
-  <section class="grid-cards">
-    <article class="panel">
-      <h2>最近更新</h2>
-      <div id="recent-updates" class="list-compact"></div>
-    </article>
-    <article class="panel">
-      <h2>朋友链接</h2>
-      <div id="friend-links" class="friend-grid"></div>
-    </article>
-    <article class="panel">
-      <h2>站点统计</h2>
-      <div id="site-stats" class="stats-grid"></div>
-    </article>
-  </section>
-
-  <section class="panel">
-    {{ page.content }}
-  </section>
+{% block content %}
+  <div class="md-typeset" style="display: block; background-color: transparent; font-size: 125%;">
+    <div class="md-grid">
+      <div class="home-intro">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
 {% endblock %}

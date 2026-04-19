@@ -1,10 +1,12 @@
-site_name: 我的笔记站
+site_name: FlyToMoonMH 的笔记本
 site_url: https://FlyToMoonMH.github.io/my-notes/
-site_description: 一个用 Markdown 写作并自动发布的个人笔记站
+site_description: FlyToMoonMH 的个人笔记与学习记录
 site_author: FlyToMoonMH
+copyright: Copyright &copy; 2026 FlyToMoonMH
 
 repo_name: FlyToMoonMH/my-notes
 repo_url: https://github.com/FlyToMoonMH/my-notes
+edit_uri: tree/main/docs
 
 theme:
   name: material
@@ -17,46 +19,39 @@ theme:
     - scheme: default
       primary: indigo
       accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: 切换到深色模式
     - scheme: slate
       primary: indigo
       accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: 切换到浅色模式
   features:
-    - navigation.tabs
+    - content.code.annotate
+    - navigation.tracking
     - navigation.top
+    - navigation.tabs
     - navigation.footer
     - navigation.indexes
-    - navigation.tracking
-    - toc.follow
-    - content.code.copy
-    - search.highlight
 
 nav:
-  - 首页:
+  - Home:
       - index.md
-      - 最近更新: changelog.md
+      - 更新记录: changelog.md
       - 朋友链接: links.md
-  - 搭站指南:
+  - Setup:
       - setup/index.md
       - 第一步：改成你自己的站: setup/first-steps.md
       - 发布到 GitHub Pages: setup/github-pages.md
-  - 示例笔记:
+  - Notes:
       - notes/index.md
       - Markdown 示例: notes/markdown-demo.md
       - 归档页示例: archive.md
       - 认识相机: notes/认识相机.md
-  - 关于:
+  - About:
       - about.md
 
 markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 4
+  - meta
   - admonition
   - attr_list
   - def_list
@@ -64,23 +59,44 @@ markdown_extensions:
   - md_in_html
   - sane_lists
   - tables
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
   - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
   - pymdownx.inlinehilite
+  - pymdownx.magiclink
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
 
 plugins:
   - search
   - heti:
       disable_serve: false
 
-extra_css:
-  - assets/stylesheets/heti.css
-  - assets/stylesheets/custom.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/FlyToMoonMH
 
-extra_javascript:
-  - assets/javascripts/site-widgets.js
+extra_css:
+  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
+  - css/tasklist.css
+  - css/custom.css
+  - css/card.css
+  - css/flink.css
+  - css/changelog_extra.css
+  - css/toc_extra.css
+  - css/svg_extra.css

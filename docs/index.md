@@ -2,32 +2,27 @@
 template: home.html
 home: true
 title: 首页
+hide:
+  - date
+  - footer
 ---
 
-# 欢迎来到我的笔记站
+# Hi!
 
-这是一个为新手准备的个人网站模板。
+这里是 FlyToMoonMH 的个人笔记本。
 
-你可以把它当成：
+这个站点主要用来整理课程学习、技术踩坑、工具记录和一些长期可复用的文档。
 
-- 个人博客
-- 技术笔记本
-- 学习记录站
-- 作品归档页
+[:material-clock-time-two-outline: 更新记录](changelog.md) /
+[:octicons-link-16: 朋友链接](links.md) /
+[:material-book-open-page-variant-outline: 笔记目录](notes/index.md) /
+[:material-account-outline: 关于](about.md)
 
-如果你现在还不懂 Linux、Git、HTML，也完全可以先用起来。
-
-## 从哪里开始改
-
-建议你先只改下面这 3 个文件：
-
-- `docs/index.md`：首页介绍
-- `docs/about.md`：关于我
-- `docs/assets/data/site-data.json`：首页卡片内容
-
-## 这个模板适合谁
-
-- 想做一个像技术文档那样清爽的网站
-- 希望主要用 Markdown 写内容
-- 不想自己维护服务器
-- 想用 GitHub Desktop 而不是记 Git 命令
+<div class="card home-card" markdown="1">
+<div class="card-body" markdown="1">
+站点定位：个人笔记本  
+主要内容：课程、工具、项目记录  
+写作方式：Markdown  
+部署方式：GitHub Pages
+</div>
+</div>
