@@ -1,5 +1,8 @@
 - auto:
   - '2026-04-20':
+    - newpage:
+        text: Pokemon Cards CSS 效果
+        href: https://FlyToMoonMH.github.io/my-notes/tools/pokemon-cards/
     - function:
         text: 增强首页卡片全息效果
         href: https://github.com/FlyToMoonMH/my-notes/commit/07612d2927bf2faf77148e92b04ecd476f80d45f
