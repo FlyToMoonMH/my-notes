@@ -57,6 +57,7 @@ nav:
       - tools/index.md
       - Shell 备忘: tools/Shell.md
       - Markdown 示例: tools/markdown-demo.md
+      - 宝可梦卡片效果: tools/pokemon-cards.md
   - Camera:
       - camera/index.md
       - 认识相机: camera/认识相机.md

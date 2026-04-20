@@ -1,6 +1,9 @@
 - auto:
   - '2026-04-20':
     - function:
+        text: 增强首页卡片全息效果
+        href: https://github.com/FlyToMoonMH/my-notes/commit/07612d2927bf2faf77148e92b04ecd476f80d45f
+    - function:
         text: 配置 giscus 评论系统（中文）
         href: https://github.com/FlyToMoonMH/my-notes/commit/f43c47d3c677b65a650b242df89573cbac763048
     - pageupdate:
