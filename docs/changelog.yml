@@ -1,5 +1,8 @@
 - auto:
   - '2026-04-20':
+    - function:
+        text: 修复卡片动画：spring物理效果 + 浅色模式按钮适配
+        href: https://github.com/FlyToMoonMH/my-notes/commit/2e7c60700a4bc7da5dec09672a680e5b6375711f
     - newpage:
         text: Pokemon Cards CSS 效果
         href: https://FlyToMoonMH.github.io/my-notes/tools/pokemon-cards/

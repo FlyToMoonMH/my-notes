@@ -1,8 +1,10 @@
 {% extends "main.html" %}
 
 {% block extrahead %}
-  <link rel="stylesheet" href="{{ 'assets/cards/home-cards.css' | url }}">
-  <script type="module" src="{{ 'assets/cards/home-cards.js' | url }}"></script>
+  <link rel="stylesheet" href="{{ 'css/cards.css' | url }}">
+  <link rel="stylesheet" href="{{ 'css/cards/base.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/cards/index.css' | url }}">
+  <script type="module" src="{{ 'assets/cards/index.js' | url }}"></script>
   <style>
     body {
       background-image: url("{{ 'assets/images/home/light.jpg' | url }}");
