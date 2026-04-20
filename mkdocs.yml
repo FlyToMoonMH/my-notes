@@ -24,16 +24,11 @@ theme:
       accent: indigo
   features:
     - content.code.annotate
-    - content.action.edit
-    - content.action.view
     - navigation.tracking
     - navigation.top
     - navigation.tabs
     - navigation.footer
     - navigation.indexes
-    - search.suggest
-    - search.highlight
-    - search.share
   static_templates:
     - redirection.html
 
@@ -43,18 +38,9 @@ validation:
     not_found: warn
     absolute_links: info
   links:
-    not_found: warn
+    not_found: ignore
     absolute_links: ignore
     unrecognized_links: ignore
-
-not_in_nav: |
-  archive.md
-  todo.md
-  notes/Shell.md
-  notes/markdown-demo.md
-  notes/毕业论文.md
-  notes/毕业论文-答辩逐字稿.md
-  notes/认识相机.md
 
 nav:
   - Home:
@@ -62,7 +48,7 @@ nav:
       - 更新记录: changelog.md
       - 朋友链接: links.md
       - 全部笔记: notes/index.md
-      - 标签: tags.md
+
   - Guides:
       - setup/index.md
       - 第一步：改成你自己的站: setup/first-steps.md
@@ -116,7 +102,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - tags
   - glightbox:
       width: 80%
   - git-revision-date-localized:

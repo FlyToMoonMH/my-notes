@@ -76,6 +76,7 @@
               ? "{{ comments.dark_theme | d('github-dark', true) }}"
               : "{{ comments.light_theme | d('github-light', true) }}"
           );
+          utterancesScript.setAttribute("lang", "zh-CN");
           container.appendChild(utterancesScript);
         {% endif %}
       })();

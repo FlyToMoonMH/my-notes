@@ -1,5 +1,8 @@
 - auto:
   - '2026-04-20':
+    - newpage:
+        text: change css
+        href: https://github.com/FlyToMoonMH/my-notes/commit/cf3719ea2b7f3d7fcb3a2b1595d740a0a08d111a
     - function:
         text: change file dire
         href: https://github.com/FlyToMoonMH/my-notes/commit/e434f7004dc823cb3fbdb920d5fe0a661f7cf107

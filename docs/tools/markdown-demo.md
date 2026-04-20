@@ -1,9 +1,5 @@
 ---
 comment: true
-description: Markdown 语法示例与排版测试页
-tags:
-  - markdown
-  - demo
 ---
 
 # Markdown 示例
