@@ -1,6 +1,9 @@
 - auto:
   - '2026-04-20':
     - function:
+        text: 缩小首页卡片尺寸
+        href: https://github.com/FlyToMoonMH/my-notes/commit/3da8056e53e7a2c662c6ed2574a025631b5a4fc0
+    - function:
         text: 集成 TonyCrane note-homepage-cards 完整卡片系统
         href: https://github.com/FlyToMoonMH/my-notes/commit/508cd438b12364bf69ed202a81aa1a84843d5657
     - function:

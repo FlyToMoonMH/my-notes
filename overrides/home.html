@@ -1,126 +1,58 @@
 {% extends "main.html" %}
 
 {% block extrahead %}
-  <link rel="stylesheet" href="{{ 'css/cards.css' | url }}">
-  <link rel="stylesheet" href="{{ 'css/cards/base.css' | url }}">
-  <link rel="stylesheet" href="{{ 'assets/cards/index.css' | url }}">
-  <script type="module" src="{{ 'assets/cards/index.js' | url }}"></script>
+  <link rel="stylesheet" href="css/cards/base.css" />
+  <link rel="stylesheet" href="css/cards/cards.css" />
+  <script type="module" crossorigin src="assets/cards/index.js"></script>
+  <link rel="stylesheet" href="assets/cards/index.css">
   <style>
     body {
       background-image: url("{{ 'assets/images/home/light.jpg' | url }}");
-      background-position: center top;
       background-size: cover;
-      background-attachment: fixed;
     }
-
     body[data-md-color-scheme="slate"] {
       background-image: url("{{ 'assets/images/home/dark.jpg' | url }}");
+      background-size: cover;
     }
-
-    .md-header,
-    .md-tabs,
-    .md-footer,
-    .md-footer-meta {
+    .md-header, .md-tabs, .md-footer, .md-footer-meta {
       background-color: transparent;
     }
-
     @media screen and (min-width: 1220px) {
       .sidebar_nav {
         height: 0 !important;
       }
     }
-
+    #app {
+      position: absolute;
+      right: calc(35% - 320px / 2);
+      top: calc(50% - 445.68px / 2);
+    }
+    @media (max-width: 960px) {
+      #app {
+        display: none;
+      }
+    }
     .md-main {
       display: flex;
       flex-direction: column;
     }
-
     .md-main__inner {
       flex: 1;
       display: flex;
       margin-top: 1.5rem;
       flex-direction: column;
       justify-content: space-between;
+      height: 100%;
       width: 100%;
     }
-
     .md-content {
       flex-grow: initial;
     }
-
     .md-content__inner {
       margin: 0 !important;
     }
-
     .md-header--shadow {
       box-shadow: none !important;
-    }
-
-    #app {
-      position: absolute;
-      right: calc(35% - 260px / 2);
-      top: calc(50% - 360px / 2);
-      width: 260px;
-      z-index: 1;
-    }
-
-    .showcase {
-      max-width: 260px;
-      margin: 0 auto;
-    }
-
-    .home-intro {
-      max-width: 36rem;
-      margin-left: 0.8rem;
-    }
-
-    .home-intro h1 {
-      margin-bottom: 1.8rem;
-      color: rgb(0 0 0 / 56%);
-      font-size: 1.75rem;
-      font-weight: 700;
-      line-height: 1.25;
-    }
-
-    body[data-md-color-scheme="slate"] .home-intro h1 {
-      color: rgb(255 255 255 / 58%);
-    }
-
-    .home-intro p {
-      max-width: 32rem;
-      margin: 0 0 1.1rem;
-      line-height: 1.9;
-    }
-
-    .home-intro p:last-of-type {
-      margin-bottom: 1.35rem;
-    }
-
-    .home-card {
-      width: min(28rem, 100%);
-      border-color: transparent;
-      font-size: 75%;
-      background: rgb(255 255 255 / 72%);
-      backdrop-filter: blur(6px);
-    }
-
-    body[data-md-color-scheme="slate"] .home-card {
-      background: rgb(0 0 0 / 42%);
-    }
-
-    @media (max-width: 960px) {
-      body {
-        background-attachment: scroll;
-      }
-
-      .home-intro {
-        max-width: none;
-        margin-left: 0;
-      }
-
-      .home-card {
-        width: 100%;
-      }
     }
   </style>
 {% endblock %}
@@ -141,7 +73,7 @@
   <div id="app"></div>
   <div class="md-typeset" style="display: block; background-color: transparent; font-size: 125%;">
     <div class="md-grid">
-      <div class="home-intro">
+      <div style="margin-left: 0.8rem;">
         {{ page.content }}
       </div>
     </div>

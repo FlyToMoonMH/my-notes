@@ -26,6 +26,12 @@
 
 }
 
+.showcase {
+  z-index: 99;
+  max-width: 320px;
+  margin: auto;
+}
+
 .card__shine,
 .card__glare {
   
