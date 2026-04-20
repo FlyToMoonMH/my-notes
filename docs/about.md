@@ -10,4 +10,11 @@
 - 工具使用记录
 - 项目与写作草稿
 
+你也可以在这里找到我：
+
+- [:fontawesome-brands-github: GitHub](https://github.com/FlyToMoonMH)
+- [:fontawesome-solid-blog: 博客](https://flytoonmh.github.io/blog/)
+- [:fontawesome-solid-house: 主页](https://flytoonmh.github.io/)
+- [:fontawesome-solid-envelope: 邮箱](mailto:mahang23@mails.ucas.ac.cn)
+
 如果你也在用 MkDocs，或者也想搭一个自己的知识站，这里之后也会慢慢整理一些可复用的经验。
