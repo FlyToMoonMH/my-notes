@@ -102,14 +102,15 @@ function mountHomeCard() {
     const rect = frame.getBoundingClientRect();
     const px = (event.clientX - rect.left) / rect.width;
     const py = (event.clientY - rect.top) / rect.height;
-    const rx = (0.5 - py) * 18;
-    const ry = (px - 0.5) * 22;
+    const rx = (0.5 - py) * 26;
+    const ry = (px - 0.5) * 32;
     frame.style.setProperty("--card-rx", `${rx.toFixed(2)}deg`);
     frame.style.setProperty("--card-ry", `${ry.toFixed(2)}deg`);
-    frame.style.setProperty("--card-lift", "-6px");
+    frame.style.setProperty("--card-lift", "12px");
     frame.style.setProperty("--card-mx", `${(px * 100).toFixed(2)}%`);
     frame.style.setProperty("--card-my", `${(py * 100).toFixed(2)}%`);
-    glare.style.setProperty("--card-glare", `${(px - 0.5) * 36}%`);
+    frame.style.setProperty("--card-angle", `${(px * 360).toFixed(0)}deg`);
+    glare.style.setProperty("--card-glare", `${(px - 0.5) * 60}%`);
   });
 
   link.addEventListener("pointerleave", resetTilt);

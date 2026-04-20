@@ -10,7 +10,7 @@
   display: block;
   color: inherit;
   text-decoration: none;
-  perspective: 1400px;
+  perspective: 1200px;
 }
 
 .showcase-card__frame {
@@ -22,17 +22,17 @@
   transform:
     rotateX(var(--card-rx, 0deg))
     rotateY(var(--card-ry, 0deg))
-    translateY(var(--card-lift, 0px));
-  transition: transform 180ms ease, box-shadow 220ms ease;
+    translateZ(var(--card-lift, 0px));
+  transition: transform 200ms ease-out, box-shadow 300ms ease;
   box-shadow:
-    0 22px 44px rgb(0 0 0 / 22%),
-    0 5px 14px rgb(0 0 0 / 14%);
+    0 25px 50px rgb(0 0 0 / 30%),
+    0 8px 20px rgb(0 0 0 / 20%);
 }
 
 .showcase-card:hover .showcase-card__frame {
   box-shadow:
-    0 30px 56px rgb(0 0 0 / 28%),
-    0 8px 24px rgb(0 0 0 / 18%);
+    0 35px 70px rgb(0 0 0 / 40%),
+    0 12px 30px rgb(0 0 0 / 25%);
 }
 
 .showcase-card__image {
@@ -61,33 +61,102 @@ body[data-md-color-scheme="slate"] .showcase-card__image--dark {
   opacity: 1;
 }
 
-.showcase-card__shine,
+/* 全息光泽层 */
+.showcase-card__shine {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  mix-blend-mode: color-dodge;
+  background:
+    radial-gradient(
+      farthest-corner circle at var(--card-mx, 50%) var(--card-my, 50%),
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.4) 15%,
+      rgba(255, 255, 255, 0) 35%
+    ),
+    radial-gradient(
+      farthest-corner circle at var(--card-mx, 50%) var(--card-my, 50%),
+      rgba(255, 0, 80, 0.25) 0%,
+      rgba(255, 200, 0, 0.2) 20%,
+      rgba(0, 255, 150, 0.15) 40%,
+      rgba(0, 150, 255, 0.2) 60%,
+      rgba(200, 0, 255, 0.25) 80%,
+      transparent 100%
+    );
+  background-blend-mode: screen, overlay;
+  filter: brightness(1.15) contrast(1.1);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.showcase-card:hover .showcase-card__shine {
+  opacity: 1;
+}
+
+/* 动态眩光 */
 .showcase-card__glare {
   position: absolute;
   inset: 0;
   border-radius: inherit;
   pointer-events: none;
-}
-
-.showcase-card__shine {
   background:
-    radial-gradient(circle at var(--card-mx, 50%) var(--card-my, 50%), rgb(255 255 255 / 42%), transparent 28%),
-    linear-gradient(135deg, rgb(255 95 109 / 18%), rgb(255 195 113 / 18%), rgb(91 255 184 / 14%), rgb(112 157 255 / 14%));
-  mix-blend-mode: screen;
+    linear-gradient(
+      125deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.15) 30%,
+      rgba(255, 255, 255, 0.45) 48%,
+      rgba(255, 255, 255, 0.15) 68%,
+      transparent 100%
+    );
+  transform: translateX(var(--card-glare, -30%)) rotate(15deg) scale(1.4);
+  mix-blend-mode: overlay;
+  opacity: 0;
+  transition: opacity 300ms ease, transform 200ms ease-out;
 }
 
-body[data-md-color-scheme="slate"] .showcase-card__shine {
-  background:
-    radial-gradient(circle at var(--card-mx, 50%) var(--card-my, 50%), rgb(255 255 255 / 20%), transparent 32%),
-    linear-gradient(135deg, rgb(255 95 109 / 14%), rgb(255 195 113 / 12%), rgb(91 255 184 / 10%), rgb(112 157 255 / 12%));
+.showcase-card:hover .showcase-card__glare {
+  opacity: 1;
 }
 
-.showcase-card__glare {
-  background: linear-gradient(120deg, transparent 20%, rgb(255 255 255 / 14%) 48%, transparent 76%);
-  transform: translateX(var(--card-glare, -24%));
-  transition: transform 160ms ease;
+/* 彩虹边缘辉光 */
+.showcase-card__frame::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--card-angle, 0deg),
+    hsl(0, 100%, 70%),
+    hsl(60, 100%, 65%),
+    hsl(120, 100%, 65%),
+    hsl(180, 100%, 70%),
+    hsl(240, 100%, 70%),
+    hsl(300, 100%, 70%),
+    hsl(360, 100%, 70%)
+  );
+  filter: blur(8px) brightness(1.2);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 400ms ease;
 }
 
+.showcase-card:hover .showcase-card__frame::after {
+  opacity: 0.5;
+}
+
+/* 卡片内部边框 */
+.showcase-card__frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* 控制按钮 */
 .showcase-card__controls {
   display: flex;
   justify-content: center;
