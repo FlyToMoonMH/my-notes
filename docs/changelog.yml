@@ -1,5 +1,8 @@
 - auto:
   - '2026-04-20':
+    - pageupdate:
+        text: change comment.html
+        href: https://github.com/FlyToMoonMH/my-notes/commit/e8e67a41c548401620f031abb9e715cea1fa5613
     - newpage:
         text: change css
         href: https://github.com/FlyToMoonMH/my-notes/commit/cf3719ea2b7f3d7fcb3a2b1595d740a0a08d111a

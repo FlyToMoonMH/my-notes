@@ -129,18 +129,12 @@ extra:
     provider: custom
     property: !ENV [GOOGLE_ANALYTICS_ID, ""]
   comments:
-    provider: utterances
-    repo: FlyToMoonMH/my-notes
-    issue_term: pathname
-    label: comments
-    light_theme: github-light
-    dark_theme: github-dark
-    # giscus 配置（如需使用 giscus 替代 utterances，请填写 category_id）
+    provider: giscus
     giscus:
       repo: FlyToMoonMH/my-notes
       repo_id: R_kgDOSAh5iw
       category: General
-      category_id: ""  # TODO: 前往仓库 Discussions 设置获取 category_id
+      category_id: DIC_kwDOSAh5i84C7P5X
       mapping: pathname
 
 extra_css:
