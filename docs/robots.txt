@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://flytoonmh.github.io/my-notes/sitemap.xml

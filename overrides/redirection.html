@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+
+{% block content %}
+  <h1>页面已移动</h1>
+  <div class="md-typeset">
+    <p>你访问的链接已经更新到了新位置。</p>
+    <p><span id="countdown">5</span> 秒后即将自动跳转，<a href="javascript:redirect()">点击此处</a>立即跳转。</p>
+  </div>
+
+  <script>
+    var countdown = 5;
+    var countdownElement = document.getElementById('countdown');
+    countdownElement.innerHTML = countdown;
+    var interval = setInterval(function() {
+      countdown--;
+      countdownElement.innerHTML = countdown;
+      if (countdown <= 0) {
+        clearInterval(interval);
+        window.location.href = '/';
+      }
+    }, 1000);
+    function redirect() {
+      window.location.href = '/';
+    }
+  </script>
+{% endblock %}

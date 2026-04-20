@@ -1,10 +1,9 @@
 ---
-template: home.html
-home: true
-title: 首页
 hide:
   - date
   - footer
+home: true
+template: home.html
 statistics: true
 ---
 
@@ -18,16 +17,15 @@ statistics: true
 [:material-rocket-launch-outline: Guides](setup/) /
 [:material-console-line: Tools](tools/) /
 [:material-camera-outline: Camera](camera/) /
-[:material-notebook-edit-outline: Writing](writing/)  
+[:material-notebook-edit-outline: Writing](writing/)
 [:octicons-link-16: 朋友们!](links.md) /
 [:material-chart-line: 站点统计](javascript:toggle_statistics();)
 
-<div id="statistics" class="card home-card" markdown="1" style="opacity: 0;">
+<div id="statistics" markdown="1" class="card home-card" style="opacity: 0;">
 <div class="card-body" markdown="1">
-页面总数：{{ pages }}  
-总字数：{{ words }}  
-代码块行数：{{ codes }}  
-图片数量：{{ images }}  
+页面总数：{{ pages }}
+总字数：{{ words }}
+代码块行数：{{ codes }}
 网站运行时间：<span id="web-time"></span>
 </div>
 </div>

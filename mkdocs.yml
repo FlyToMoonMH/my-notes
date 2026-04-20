@@ -24,11 +24,18 @@ theme:
       accent: indigo
   features:
     - content.code.annotate
+    - content.action.edit
+    - content.action.view
     - navigation.tracking
     - navigation.top
     - navigation.tabs
     - navigation.footer
     - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+  static_templates:
+    - redirection.html
 
 validation:
   nav:
@@ -36,9 +43,18 @@ validation:
     not_found: warn
     absolute_links: info
   links:
-    not_found: ignore
+    not_found: warn
     absolute_links: ignore
     unrecognized_links: ignore
+
+not_in_nav: |
+  archive.md
+  todo.md
+  notes/Shell.md
+  notes/markdown-demo.md
+  notes/毕业论文.md
+  notes/毕业论文-答辩逐字稿.md
+  notes/认识相机.md
 
 nav:
   - Home:
@@ -46,6 +62,7 @@ nav:
       - 更新记录: changelog.md
       - 朋友链接: links.md
       - 全部笔记: notes/index.md
+      - 标签: tags.md
   - Guides:
       - setup/index.md
       - 第一步：改成你自己的站: setup/first-steps.md
@@ -54,7 +71,6 @@ nav:
       - tools/index.md
       - Shell 备忘: tools/Shell.md
       - Markdown 示例: tools/markdown-demo.md
-      - 归档页示例: archive.md
   - Camera:
       - camera/index.md
       - 认识相机: camera/认识相机.md
@@ -100,6 +116,7 @@ markdown_extensions:
 
 plugins:
   - search
+  - tags
   - glightbox:
       width: 80%
   - git-revision-date-localized:
@@ -133,11 +150,12 @@ extra:
     label: comments
     light_theme: github-light
     dark_theme: github-dark
+    # giscus 配置（如需使用 giscus 替代 utterances，请填写 category_id）
     giscus:
       repo: FlyToMoonMH/my-notes
       repo_id: R_kgDOSAh5iw
       category: General
-      category_id: ""
+      category_id: ""  # TODO: 前往仓库 Discussions 设置获取 category_id
       mapping: pathname
 
 extra_css:

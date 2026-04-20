@@ -1,3 +1,11 @@
+---
+description: 发布 MkDocs 站点到 GitHub Pages
+tags:
+  - setup
+  - github
+  - deploy
+---
+
 # 发布到 GitHub Pages
 
 这是最适合新手的发布方式。

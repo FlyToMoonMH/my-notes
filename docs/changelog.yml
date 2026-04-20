@@ -11,7 +11,7 @@
         href: https://github.com/FlyToMoonMH/my-notes/commit/745e52dbc10cedf8689dcf8db50369ea3888810d
     - pageupdate:
         text: o(〃'▽'〃)o Hi!
-        href: http://127.0.0.1:8000/my-notes/
+        href: https://FlyToMoonMH.github.io/my-notes/
     - function:
         text: Update mkdocs.yml
         href: https://github.com/FlyToMoonMH/my-notes/commit/9f86e3f597c9f794bee5fccdbb4a50f4e07380a3
@@ -55,7 +55,7 @@
   - '2026-04-15':
     - newpage:
         text: change css
-        href: http://127.0.0.1:8000/my-notes/notes/Shell/
+        href: https://FlyToMoonMH.github.io/my-notes/notes/Shell/
   - '2026-04-13':
     - function:
         text: Update mkdocs.yml

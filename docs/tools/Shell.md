@@ -1,5 +1,10 @@
 ---
 comment: true
+description: 常用 Shell 命令和终端概念备忘
+tags:
+  - shell
+  - terminal
+  - tools
 ---
 
 # 什么是Terminal？
