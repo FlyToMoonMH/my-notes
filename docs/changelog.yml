@@ -1,6 +1,9 @@
 - auto:
   - '2026-04-20':
     - function:
+        text: 集成 TonyCrane note-homepage-cards 完整卡片系统
+        href: https://github.com/FlyToMoonMH/my-notes/commit/508cd438b12364bf69ed202a81aa1a84843d5657
+    - function:
         text: 修复卡片动画：spring物理效果 + 浅色模式按钮适配
         href: https://github.com/FlyToMoonMH/my-notes/commit/2e7c60700a4bc7da5dec09672a680e5b6375711f
     - newpage:
