@@ -1,5 +1,18 @@
 - auto:
+  - '2026-05-13':
+    - pageupdate:
+        text: Camera
+        href: https://FlyToMoonMH.github.io/my-notes/camera/
+    - pageupdate:
+        text: Camera
+        href: https://FlyToMoonMH.github.io/my-notes/camera/
   - '2026-04-20':
+    - pageupdate:
+        text: 关于
+        href: https://FlyToMoonMH.github.io/my-notes/about/
+    - function:
+        text: 完全对齐 TonyCrane 首页卡片实现
+        href: https://github.com/FlyToMoonMH/my-notes/commit/2dd13a4eb19581b0078d854b60724746345e170c
     - function:
         text: 缩小首页卡片尺寸
         href: https://github.com/FlyToMoonMH/my-notes/commit/3da8056e53e7a2c662c6ed2574a025631b5a4fc0
