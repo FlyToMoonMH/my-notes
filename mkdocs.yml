@@ -61,6 +61,7 @@ nav:
   - Camera:
       - camera/index.md
       - 认识相机: camera/认识相机.md
+      - 快门、光圈、ISO: camera/快门、光圈、ISO.md
   - Writing:
       - writing/index.md
       - 毕业论文: writing/毕业论文.md
