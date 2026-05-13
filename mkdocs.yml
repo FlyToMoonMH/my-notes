@@ -128,9 +128,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/FlyToMoonMH
     - icon: fontawesome/solid/blog
-      link: https://flytoonmh.github.io/blog/
+      link: https://flytomoonmh.github.io/blog/
     - icon: fontawesome/solid/house
-      link: https://flytoonmh.github.io/
+      link: https://flytomoonmh.github.io/
   analytics:
     provider: custom
     property: !ENV [GOOGLE_ANALYTICS_ID, ""]
