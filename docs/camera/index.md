@@ -9,4 +9,7 @@
 - [:material-camera-outline: 认识相机](认识相机.md)
   用更直观的方式理解焦距、视角、CMOS 和画幅之间的关系。
 
+- [:material-camera-outline: 认识相机](快门、光圈、ISO.md)
+  
+
 </div>
